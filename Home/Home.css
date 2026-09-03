@@ -98,7 +98,7 @@ img{
     margin: 0;
 }
 
-video {
+iframe {
     display: flex;
     justify-self: center;
     height: 70vh;
