@@ -2,7 +2,7 @@ var Box = document.getElementById("Box");
 var Back = document.getElementById("Back");
 var Count = 0;
 var Enter = "" ;
-var Password = "voltron";
+var Password = "(Ne-c1W?bBd";
 const htmlNode = document.documentElement; 
 const bodyNode = document.body;       
 
@@ -33,7 +33,7 @@ var LookTable = {
     "à":"Elementi/Caratteri/à.png", "é":"Elementi/Caratteri/é.png", "§":"Elementi/Caratteri/§.png", "[":"Elementi/Caratteri/[.png", "]":"Elementi/Caratteri/].png",
     "{":"Elementi/Caratteri/{.png", "}":"Elementi/Caratteri/}.png", "(":"Elementi/Caratteri/(.png", ")":"Elementi/Caratteri/).png", ",":"Elementi/Caratteri/,.png",
     ".":"Elementi/Caratteri/.png", "*":"Elementi/Caratteri/*.png", "-":"Elementi/Caratteri/-.png", "_":"Elementi/Caratteri/_.png", "+":"Elementi/Caratteri/+.png",
-    "=":"Elementi/Caratteri/=.png", "?":"Elementi/Caratteri/?.png", "!":"Elementi/Caratteri/!.png", "€":"Elementi/Caratteri/€.png", "$":"Elementi/Caratteri/$.png",
+    "=":"Elementi/Caratteri/=.png", "?":"Elementi/Caratteri/_-09.png", "!":"Elementi/Caratteri/!.png", "€":"Elementi/Caratteri/€.png", "$":"Elementi/Caratteri/$.png",
     "^":"Elementi/Caratteri/^.png", "<":"Elementi/Caratteri/<.png", ">":"Elementi/Caratteri/>.png", "°":"Elementi/Caratteri/°.png", "#":"Elementi/Caratteri/#.png",
     "@":"Elementi/Caratteri/@.png", "%":"Elementi/Caratteri/%.png", "&":"Elementi/Caratteri/&.png"
 };
@@ -46,7 +46,23 @@ var LookTableCapital = {
     "z":"Elementi/Caratteri/Z-1.png"
 }
 
+MobileInput.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        if (this.value === Password) {
+            window.location.href = "../Work/DS.html";
+        } else {
+            this.value = ""; 
+            Back.style.background = 'url("Elementi/Password_insert_Off.png") center / contain no-repeat';
+        }
+    }
+});
+
 document.addEventListener("keydown", function(e){
+
+    if (window.getComputedStyle(MobileInput).display !== "none") {
+        return; 
+    }
+
     if(e.key === "Backspace"){
         e.preventDefault();
         if (Box.lastElementChild){
