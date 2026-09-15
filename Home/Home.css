@@ -176,4 +176,16 @@ a {
     .Background {
         width: clamp(100vw, 80.49vw + 357px, 140vw);
     }
+    
+}
+
+@media (max-aspect-ratio: 1/1) {
+    
+    iframe {
+        display: flex;
+        justify-self: center;
+        height: 15vh;
+        margin-top: 10%;
+        width: 60vw;
+    }
 }

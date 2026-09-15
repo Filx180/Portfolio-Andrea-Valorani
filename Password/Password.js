@@ -33,7 +33,7 @@ var LookTable = {
     "à":"Elementi/Caratteri/à.png", "é":"Elementi/Caratteri/é.png", "§":"Elementi/Caratteri/§.png", "[":"Elementi/Caratteri/[.png", "]":"Elementi/Caratteri/].png",
     "{":"Elementi/Caratteri/{.png", "}":"Elementi/Caratteri/}.png", "(":"Elementi/Caratteri/(.png", ")":"Elementi/Caratteri/).png", ",":"Elementi/Caratteri/,.png",
     ".":"Elementi/Caratteri/.png", "*":"Elementi/Caratteri/*.png", "-":"Elementi/Caratteri/-.png", "_":"Elementi/Caratteri/_.png", "+":"Elementi/Caratteri/+.png",
-    "=":"Elementi/Caratteri/=.png", "?":"Elementi/Caratteri/_-09.png", "!":"Elementi/Caratteri/!.png", "€":"Elementi/Caratteri/€.png", "$":"Elementi/Caratteri/$.png",
+    "=":"Elementi/Caratteri/=.png", "?":"Elementi/Caratteri/QDot.png", "!":"Elementi/Caratteri/!.png", "€":"Elementi/Caratteri/€.png", "$":"Elementi/Caratteri/$.png",
     "^":"Elementi/Caratteri/^.png", "<":"Elementi/Caratteri/<.png", ">":"Elementi/Caratteri/>.png", "°":"Elementi/Caratteri/°.png", "#":"Elementi/Caratteri/#.png",
     "@":"Elementi/Caratteri/@.png", "%":"Elementi/Caratteri/%.png", "&":"Elementi/Caratteri/&.png"
 };
