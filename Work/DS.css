@@ -148,7 +148,7 @@ img{
     color: white;
     top:2%;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     z-index: 10;
     box-sizing: border-box;
 }
@@ -229,6 +229,14 @@ a {
     z-index: 2;
     margin-top: 3%;
 }
+
+.ButtonTop {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
 
 .Box img {
     width: clamp(40px,3%,100px) !important;  

@@ -20,6 +20,13 @@ e.preventDefault();
 }
 });
 
+function ScrollToTop() {
+    const wrapper = document.querySelector('.Wrapper');
+    if (wrapper) {
+        wrapper.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
+
 
 animateWithRandomPause();
 

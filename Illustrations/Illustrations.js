@@ -7,6 +7,13 @@ e.preventDefault();
 }
 });
 
+function ScrollToTop() {
+    const wrapper = document.querySelector('.Wrapper');
+    if (wrapper) {
+        wrapper.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+}
+
 function animateWithRandomPause() {
     htmlNode.classList.remove('is-animating');
     bodyNode.classList.remove('is-animating');

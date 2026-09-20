@@ -154,7 +154,7 @@ video {
     top:2%;
     color: white;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     z-index: 10;
     box-sizing: border-box;
 }
@@ -282,6 +282,13 @@ a {
     transform: translateX(-50%); 
     transition: left 0.5s ease-in-out;
     cursor: pointer;
+}
+
+.ButtonTop {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 50%;
 }
 
 .Controls {
