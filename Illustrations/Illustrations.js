@@ -1,6 +1,12 @@
 const htmlNode = document.documentElement; 
 const bodyNode = document.body;       
 
+document.addEventListener('contextmenu', function(e) {
+if (e.target.tagName === 'IMG') {
+e.preventDefault();
+}
+});
+
 function animateWithRandomPause() {
     htmlNode.classList.remove('is-animating');
     bodyNode.classList.remove('is-animating');
