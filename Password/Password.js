@@ -65,10 +65,52 @@ MobileInput.addEventListener("keydown", function(e) {
     }
 });
 
+document.addEventListener("paste", function(e) {
+    if (window.getComputedStyle(MobileInput).display !== "none") {
+        return; 
+    }
+
+    e.preventDefault();
+    
+
+    var pastedText = (e.clipboardData || window.clipboardData).getData("text");
+    
+    if (pastedText.length > 0) {
+        Back.style.background = 'url("Elementi/Password_insert_Off.png") center / contain no-repeat';
+    }
+
+    for (var i = 0; i < pastedText.length; i++) {
+        if (Count >= 20) break;
+
+        var Letter = pastedText[i];
+        var Image = "";
+
+        if (LookTable[Letter]) {
+            Image = LookTable[Letter];
+        } else if (LookTableCapital[Letter.toLowerCase()]) {
+            Image = LookTableCapital[Letter.toLowerCase()];
+        }
+
+        if (Image) {
+            var nuovaImg = document.createElement("img");
+            nuovaImg.src = Image;
+            nuovaImg.alt = Letter;
+            
+            Box.appendChild(nuovaImg);
+            Count++; 
+            Enter += Letter; 
+        }
+    }
+});
+
 document.addEventListener("keydown", function(e){
 
     if (window.getComputedStyle(MobileInput).display !== "none") {
         return; 
+    }
+
+    if (e.ctrlKey || e.metaKey) {
+        return;
     }
 
     if(e.key === "Backspace"){
