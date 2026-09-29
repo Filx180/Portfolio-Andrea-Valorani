@@ -90,11 +90,15 @@ document.addEventListener("keydown", function(e){
     if(e.key === "Enter"){
         if(Enter === Password){
             window.location.href = "../Work/DS.html";
+            Back.style.background = 'url("Elementi/Password_Insert_on.png") center / contain no-repeat';
+        }
+        else{
+            Back.style.background = 'url("Elementi/Password_retry.png") center / contain no-repeat';
         }
         Box.innerHTML = "";
         Enter = "";
         Count = 0;
-        Back.style.background = 'url("Elementi/Password_Insert_on.png") center / contain no-repeat';
+        
         return; 
     }
 
