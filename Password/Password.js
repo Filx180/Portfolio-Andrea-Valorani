@@ -19,6 +19,7 @@ function animateWithRandomPause() {
     setTimeout(animateWithRandomPause, 4000 + randomPause);
 }
 
+Back.style.background = 'url("Elementi/Password_Insert_on.png") center / contain no-repeat';
 
 document.addEventListener('contextmenu', function(e) {
 if (e.target.tagName === 'IMG') {
